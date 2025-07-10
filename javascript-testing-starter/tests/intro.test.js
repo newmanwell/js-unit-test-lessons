@@ -1,5 +1,5 @@
 import { describe, test, it, expect } from "vitest";
-import { fizzBuzz, max } from "../src/intro";
+import { calculateAverage, fizzBuzz, max } from "../src/intro";
 
 // AAA pattern = Arrange, Act, Assert
 
@@ -40,5 +40,23 @@ describe('fizzBuzz', () => {
 
   it('should return the passed in number as a string if not divisible by 3 and 5', () => {
     expect(fizzBuzz(11)).toBe('11');
+  });
+});
+
+describe('calculateAverage', () => {
+  it('should return NaN for an empty array', () => {
+    expect(calculateAverage([])).toBe(NaN);
+  });
+
+  it('should return the average of an array with 1 element', () => {
+    expect(calculateAverage([5])).toBe(5);
+  });
+
+  it('should return the average of an array with 2 elements', () => {
+    expect(calculateAverage([5, 7])).toBe(6);
+  });
+
+  it('should return the average of an array with 3 elements', () => {
+    expect(calculateAverage([5, 7, 9])).toBe(7);
   });
 });
