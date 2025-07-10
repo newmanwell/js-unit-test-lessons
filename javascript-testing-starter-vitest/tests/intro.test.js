@@ -1,5 +1,5 @@
 import { describe, test, it, expect } from "vitest";
-import { calculateAverage, fizzBuzz, max } from "../src/intro";
+import { calculateAverage, calculateFactorial, fizzBuzz, max } from "../src/intro";
 
 // AAA pattern = Arrange, Act, Assert
 
@@ -58,5 +58,27 @@ describe('calculateAverage', () => {
 
   it('should return the average of an array with 3 elements', () => {
     expect(calculateAverage([5, 7, 9])).toBe(7);
+  });
+});
+
+describe('calculateFactorial', () => {
+  it('should return 1 if number is 0', () => {
+    expect(calculateFactorial(0)).toBe(1);
+  });
+
+  it('should return 1 if number is 1', () => {
+    expect(calculateFactorial(1)).toBe(1);
+  });
+
+  it('should return 24 if number is 4', () => {
+    expect(calculateFactorial(4)).toBe(24);
+  });
+
+  it('should return 1307674368000 if number is 15', () => {
+    expect(calculateFactorial(15)).toBe(1307674368000);
+  });
+
+  it('should return undefined if number is negative', () => {
+    expect(calculateFactorial(-5)).toBeUndefined();
   });
 });

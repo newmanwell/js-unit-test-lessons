@@ -15,3 +15,15 @@ export function calculateAverage(numbers) {
   if (numbers.length === 0) return NaN;
   return numbers.reduce((acc, cur) => acc + cur) / numbers.length;
 }
+
+export function calculateFactorial(number) {
+  if (number < 0) return undefined;
+
+  let finalNumber = 1;
+
+  for (let i = 1; i <= number; i++) {
+    finalNumber *= i;
+  }
+
+  return finalNumber;
+}
