@@ -1,4 +1,4 @@
-# Teasting
+# Testing
 ## Jest
 ### As my coding journey continues I am teaching myself how to test my code. First up is Jest.
 * A test to add (sum.test.js)
