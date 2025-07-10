@@ -1,5 +1,5 @@
 import { describe, test, it, expect } from "vitest";
-import { max } from "../src/intro";
+import { fizzBuzz, max } from "../src/intro";
 
 // AAA pattern = Arrange, Act, Assert
 
@@ -22,5 +22,23 @@ describe('max', () => {
 
   it('should return a if both arguments are equal', () => {
     expect(max(15, 15)).toBe(15);
+  });
+});
+
+describe('fizzBuzz', () => {
+  it('should return FizzBuzz if number is divisible by 3 && 5', () => {
+    expect(fizzBuzz(30)).toBe('FizzBuzz');
+  });
+
+  it('should return Fizz if number is divisible by 3 only', () => {
+    expect(fizzBuzz(9)).toBe('Fizz');
+  });
+
+  it('should return Buzz if number is divisible by 5 only', () => {
+    expect(fizzBuzz(20)).toBe('Buzz');
+  });
+
+  it('should return the passed in number as a string if not divisible by 3 and 5', () => {
+    expect(fizzBuzz(11)).toBe('11');
   });
 });
