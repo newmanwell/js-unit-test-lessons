@@ -11,4 +11,5 @@
 * Four tests for the classic Fizz Buzz game
 * Four tests to find the average of an array of numbers
 * Five tests to find the fatorial of varuois numbers
-* Test Driven Developemnt method was used in the last two
+* Five tests to find the largent number in an array
+* Test Driven Developemnt method was used in the last three
