@@ -6,6 +6,7 @@
 * Three tests to check that a string is reversed (reverseString.test.js)
 * A test to compare objects (shallowObjClone.test.js)
 ## Vitest
+### All tests (max, fizzBuzz, calculateAverage, calculateFactorial are in intro.test.js)
 * Three tests to find the higher number
 * Four tests for the classic Fizz Buzz game
 * Four tests to find the average of an array of numbers
