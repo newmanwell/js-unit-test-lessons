@@ -1,5 +1,5 @@
 import { describe, test, it, expect } from "vitest";
-import { calculateAverage, calculateFactorial, fizzBuzz, max } from "../src/intro";
+import { calculateAverage, calculateFactorial, findLargestNumber, fizzBuzz, max } from "../src/intro";
 
 // AAA pattern = Arrange, Act, Assert
 
@@ -80,5 +80,27 @@ describe('calculateFactorial', () => {
 
   it('should return undefined if number is negative', () => {
     expect(calculateFactorial(-5)).toBeUndefined();
+  });
+});
+
+describe('findLargestNumber', () => {
+  it('should return NaN if array is empty', () => {
+    expect(findLargestNumber([])).toBe(NaN);
+  });
+
+  it('should return 5 if array has one index of 5', () => {
+    expect(findLargestNumber([5])).toBe(5);
+  });
+
+  it('should return 1 if array has numbers 5 and 11', () => {
+    expect(findLargestNumber([5, 11])).toBe(11);
+  });
+
+  it('should return 1 if array has numbers 5 and 11', () => {
+    expect(findLargestNumber([5, 11, 1, 15])).toBe(15);
+  });
+
+  it('should return 1 if array has numbers 5 and 11', () => {
+    expect(findLargestNumber([-4, -3, -2, -1])).toBe(-1);
   });
 });
