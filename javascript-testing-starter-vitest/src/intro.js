@@ -27,3 +27,17 @@ export function calculateFactorial(number) {
 
   return finalNumber;
 }
+
+export function findLargestNumber(numberArray) {
+  if (numberArray.length === 0) return NaN;
+
+  let largestNumber = numberArray[0];
+
+  for (let i = 1; i < numberArray.length; i++) {
+    if (numberArray[i] > largestNumber) {
+      largestNumber = numberArray[i];
+    }
+  }
+
+  return largestNumber;
+}
