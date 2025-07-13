@@ -5,6 +5,7 @@
 * Three tests to compare a string to a reversed string (isPalindrome.test.js)
 * Three tests to check that a string is reversed (reverseString.test.js)
 * A test to compare objects (shallowObjClone.test.js)
+* Four tests to find the longest word in an array (longestWord.test.js)
 ## Vitest
 ### All tests (max, fizzBuzz, calculateAverage, calculateFactorial are in intro.test.js)
 * Three tests to find the higher number
