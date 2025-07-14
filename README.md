@@ -7,10 +7,10 @@
 * A test to compare objects (shallowObjClone.test.js)
 * Four tests to find the longest word in an array (longestWord.test.js)
 ## Vitest
-### All tests (max, fizzBuzz, calculateAverage, calculateFactorial are in intro.test.js)
+### All tests (max, fizzBuzz, calculateAverage, calculateFactorial, findLargestNumber are in intro.test.js)
 * Three tests to find the higher number
 * Four tests for the classic Fizz Buzz game
 * Four tests to find the average of an array of numbers
 * Five tests to find the fatorial of varuois numbers
-* Five tests to find the largent number in an array
+* Five tests to find the largest number in an array
 * Test Driven Developemnt method was used in the last three
