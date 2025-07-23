@@ -14,3 +14,9 @@
 * Five tests to find the fatorial of varuois numbers
 * Five tests to find the largest number in an array
 * Test Driven Developemnt method was used in the last three
+## Playwright
+### Starting by making a test on bbc.com
+* Four clicks
+* One screenshoot saved to the folder
+* One video of whole process also saved
+* Left headless as false for now
