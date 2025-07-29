@@ -35,6 +35,9 @@ const { test, expect } = require('@playwright/test');
   await expect(page.getByText('make dinner')).toHaveCount(0);
   await expect(page.getByText('go shopping')).toHaveCount(1);
 
+  // Take screenshot
+  await page.screenshot({path: 'final_list_screenshot.png'});
+  
   // close out
   await context.close();
   await browser.close();
