@@ -19,7 +19,8 @@
 * Four clicks
 * One screenshoot saved to the folder
 * One video of whole process also saved
-* Left headless as false for now### Test for my Todo
+* Left headless as false for now
+### Test for my Todo
 * Add three items
 * Delete two items and verify they are no longer in the list
 * Take screenshot of final list with just one item
