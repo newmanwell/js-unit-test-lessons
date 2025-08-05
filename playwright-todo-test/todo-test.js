@@ -22,6 +22,11 @@ const { test, expect } = require('@playwright/test');
   await page.getByRole('textbox', { name: 'Add item' }).click();
   await page.getByRole('textbox', { name: 'Add item' }).fill('feed fish');
   await page.getByRole('button', { name: 'Add new item to list' }).click();
+
+  // Check for all tiems in the list
+  await expect(page.getByText('feed fish')).toHaveCount(1);
+  await expect(page.getByText('make dinner')).toHaveCount(1);
+  await expect(page.getByText('go shopping')).toHaveCount(1);
   
   // Delete "feed fish"
   await page.getByRole('listitem').filter({ hasText: 'feed fishX' }).getByRole('button').click();
